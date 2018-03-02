@@ -1,5 +1,2 @@
-FROM centos:latest
-MAINTAINER John W.
-EXPOSE 9090
-EXPOSE 9100
-
+FROM prom/prometheus
+ADD prometheus.yml /etc/prometheus/
