@@ -1,6 +1,6 @@
 FROM centos:latest
-RUN apt-get update && \
-    apt-get -y install sudo \
+RUN yum update && \
+    yum -y install sudo \
     useradd -m prometheus && echo "docker" | chpasswd && adduser prometheus sudo
 USER prometheus
 RUN
