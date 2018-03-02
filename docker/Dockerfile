@@ -1,7 +1,7 @@
 FROM centos:latest
-RUN yum update && \
-    yum -y install sudo \
-    useradd -m prometheus && echo "docker" | chpasswd && adduser prometheus sudo
+RUN yum update -y && \
+    yum -y install sudo && \
+    useradd -m prometheus && echo "thisisatestpass" | passwd && adduser prometheus sudo --stdin \
 USER prometheus
 RUN
     mkdir ~/downloads \
