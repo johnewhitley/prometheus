@@ -1,7 +1,7 @@
 FROM centos:latest
-RUN yum update -y && \
-    yum -y install sudo && \
-    useradd -m prometheus && echo "thisisatestpass" | passwd && adduser prometheus sudo --stdin \
+MAINTAINER John Whitley
+RUN yum -y install sudo && \
+    useradd -m prometheus \
 USER prometheus
 RUN
     mkdir ~/downloads \
