@@ -1,0 +1,5 @@
+FROM centos:latest
+MAINTAINER John W.
+EXPOSE 9090
+EXPOSE 9100
+
