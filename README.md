@@ -1,4 +1,4 @@
-# Project Title
+# Prometheus, Node Exporter, and Grafana in a Container
 
 Testing creation of Docker Images with Customer Dockerfile
 
@@ -14,7 +14,7 @@ What things you need to install the software and how to install them
 Docker
 ```
 
-### Installing
+### Deploying
 
 A step by step series of examples that tell you have to get a development env running
 
