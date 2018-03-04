@@ -18,7 +18,7 @@ Docker
 
 A step by step series of examples that tell you have to get a development env running
 
-Kick off prometheus.sh script
+Kick off start.sh script to build/run prometheus contain & run grafana container.
 
 ```
 ./prometheus.sh
