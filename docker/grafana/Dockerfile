@@ -1,5 +1,6 @@
-FROM grafana:grafana
+FROM grafana/grafana
 MAINTAINER John Whitley
-RUN run2.sh
+COPY prometheus.yaml /etc/grafana/provisioning/datasources/prometheus.yaml
+
 #Expose Ports
 EXPOSE 3000
