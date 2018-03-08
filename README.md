@@ -1,6 +1,6 @@
-# Prometheus, Node Exporter, and Grafana in a Container
+# Prometheus, Node Exporter, and Grafana Containerized.
 
-Testing creation of Docker Images with Customer Dockerfile
+Testing creation of Docker Images with Custome Dockerfiles.
 
 ## Getting Started
 
@@ -21,12 +21,13 @@ A step by step series of examples that tell you have to get a development env ru
 Kick off start.sh script to build/run prometheus contain & run grafana container.
 
 ```
-./start.sh
+Change url var in docker/grafana/prometheus.yaml to your local host url and then run start.sh
+
 ```
 
-Visit localhost.com:3000 for viewing Prometheus and Node Exporter atttached to Grafana
+Visit localhost.com:3000 for viewing Prometheus and Node Exporter displayed in Grafana.
 ```
-localhost.com:9090
+localhost.com:3000
 ```
 
 ## Authors
