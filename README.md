@@ -4,7 +4,7 @@ Testing creation of Docker Images with Customer Dockerfile
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -21,10 +21,10 @@ A step by step series of examples that tell you have to get a development env ru
 Kick off start.sh script to build/run prometheus contain & run grafana container.
 
 ```
-./prometheus.sh
+./start.sh
 ```
 
-Visit localhost.com:9090 for viewing Prometheus and Node Exporter
+Visit localhost.com:3000 for viewing Prometheus and Node Exporter atttached to Grafana
 ```
 localhost.com:9090
 ```
@@ -32,7 +32,3 @@ localhost.com:9090
 ## Authors
 
 * **John Whitley* - *Initial work* - [johnewhitley](https://github.com/johnewhitley)
-
-## Acknowledgments
-
-* Billy Kyle Wooten
