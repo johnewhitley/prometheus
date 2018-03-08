@@ -13,10 +13,10 @@ datasources:
   # <int> org id. will default to orgId 1 if not specified
   orgId: 1
   # <string> url
-  url: http://whitleyserver.ddns.net:8080
+  url: http://whitleyserver.ddns.net:9090
   # <string> database password, if used
   #json data
-  timeInterval: 15
+  timeInterval: 15s
   jsonData:
      tlsAuth: true
      tlsAuthWithCACert: true
