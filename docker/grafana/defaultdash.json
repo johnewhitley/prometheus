@@ -1,8 +1,43 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_PROMETHEUS",
+      "label": "Prometheus",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ],
+  "__requires": [
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "5.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "graph",
+      "name": "Graph",
+      "version": "5.0.0"
+    },
+    {
+      "type": "datasource",
+      "id": "prometheus",
+      "name": "Prometheus",
+      "version": "5.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "singlestat",
+      "name": "Singlestat",
+      "version": "5.0.0"
+    }
+  ],
   "annotations": {
     "list": [
       {
-        "$$hashKey": "object:302",
         "builtIn": 1,
         "datasource": "-- Grafana --",
         "enable": true,
@@ -12,8 +47,7 @@
         "type": "dashboard"
       },
       {
-        "$$hashKey": "object:303",
-        "datasource": "Prometheus",
+        "datasource": "${DS_PROMETHEUS}",
         "enable": false,
         "expr": "ALERTS{alias=\"$host\", alertstate=\"firing\"}",
         "iconColor": "rgb(252, 5, 0)",
@@ -23,8 +57,7 @@
         "titleFormat": "{{ alertname }}"
       },
       {
-        "$$hashKey": "object:304",
-        "datasource": "Prometheus",
+        "datasource": "${DS_PROMETHEUS}",
         "enable": true,
         "expr": "ALERTS{alias=\"$host\",alertstate=\"pending\"}",
         "iconColor": "rgb(228, 242, 9)",
@@ -39,8 +72,8 @@
   "editable": true,
   "gnetId": 159,
   "graphTooltip": 1,
-  "id": 1,
-  "iteration": 1520527006963,
+  "id": null,
+  "iteration": 1520527508721,
   "links": [],
   "panels": [
     {
@@ -52,7 +85,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 1,
       "editable": true,
       "error": false,
@@ -139,7 +172,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "editable": true,
       "error": false,
       "format": "none",
@@ -224,7 +257,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -312,7 +345,7 @@
         "rgba(237, 129, 40, 0.89)",
         "rgba(50, 172, 45, 0.97)"
       ],
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 0,
       "editable": true,
       "error": false,
@@ -395,7 +428,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -489,7 +522,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -626,7 +659,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -765,7 +798,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -903,7 +936,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1003,7 +1036,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1121,7 +1154,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1216,7 +1249,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1316,7 +1349,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1425,7 +1458,7 @@
       "bars": true,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1538,7 +1571,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1656,7 +1689,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1765,7 +1798,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "${DS_PROMETHEUS}",
       "decimals": 2,
       "editable": true,
       "error": false,
@@ -1946,12 +1979,8 @@
       {
         "allFormat": "glob",
         "allValue": null,
-        "current": {
-          "tags": [],
-          "text": "localhost:9100",
-          "value": "localhost:9100"
-        },
-        "datasource": "Prometheus",
+        "current": {},
+        "datasource": "${DS_PROMETHEUS}",
         "hide": 0,
         "includeAll": false,
         "label": "Host",
@@ -2035,7 +2064,7 @@
     "type": "timepicker"
   },
   "timezone": "browser",
-  "title": "Prometheus system",
-  "uid": "slewengik",
-  "version": 2
+  "title": "Prometheus Dash",
+  "uid": "R8qWg4gik",
+  "version": 1
 }
